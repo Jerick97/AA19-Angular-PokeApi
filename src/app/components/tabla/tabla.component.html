@@ -1,1 +1,9 @@
-<p>{{pokemonList | json}}</p>
+<div class="mx-auto mt-6 p-3">
+    <div class="grid grid-cols-4 gap-4">
+        <div *ngFor="let pokemon of pokemonList" class="border">
+            <p>{{pokemon.position}}</p>
+            <img src="{{pokemon.image}}" alt="{{pokemon.name}}">
+            <p>{{pokemon.name}}</p>
+        </div>
+    </div>
+</div>
