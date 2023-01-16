@@ -1,9 +1,12 @@
-<div class="mx-auto mt-6 p-3">
-    <div class="grid grid-cols-4 gap-4">
-        <div *ngFor="let pokemon of pokemonList" class="border">
-            <p>{{pokemon.position}}</p>
-            <img src="{{pokemon.image}}" alt="{{pokemon.name}}">
-            <p>{{pokemon.name}}</p>
+<div class="mx-auto mt-6 p-3 w-ful">
+    <h1 class="text-xl font-bold text-center">Todos los Pokemon del 1 al 150</h1>
+    <div class="grid grid-cols-4 gap-4 pt-5">
+        <div *ngFor="let pokemon of pokemonList" class="border border-black rounded w-32 h-auto p-2">
+            <div class="text-center">
+                <p>{{pokemon.position}}</p>
+                <img src="{{pokemon.image}}" alt="{{pokemon.name}}">
+                <p>{{pokemon.name}}</p>
+            </div>
         </div>
     </div>
 </div>

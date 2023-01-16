@@ -29,6 +29,10 @@ export class TablaComponent implements OnInit {
         },
         error => { 
           console.log(error) //en caso de un error, imprimirlo en la consola
+        },
+        //Cuando termine la petición, ordenamos de manera descendente todos los pokemon
+        () => {
+          this.pokemonList.sort((a, b) => a.position - b.position);
         }
       );
     }
